@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Global Styling Started */
+:root {
+    --dark-blue: #091B6F;
+    --light-blue: #F1F3FF;
+    --green: #5CB85F;   
+    --white: #FFFFFF;
+    --black: #000000; 
+    --grey: #C4C4C4;
+  }
+  
+  * {
+      font-family: Helvetica, sans-serif;
+      scroll-behavior: smooth;
+  }
+  
+  .btn-success {
+      background-color:var(--green);
+      border-radius: 2px;
+      border: none;
+      padding: 8px 12px;
+  }
+  
+  section {
+      margin-bottom: 50px;
+  }
+  
+  p {
+      font-size: 14px;
+    }
+  /* Global Styling Ended */
+
+/* Navbar Section Styling Started */
+nav {
+	background-color: var(--light-blue);
+}
+
+.navbar-brand {
+	width: 100px;
+	height: 34px;
+	background-color: var(--dark-blue);
+}
+
+#offcanvasRight {
+	width: 50%;
+}
+/* Navbar Section Styling Ended */
+  
+/* Hero Section Styling Started */
+#hero {
+    background-color: var(--light-blue);
+}
+
+#hero .container {
+    background-color: var(--light-blue);
+	  width: 100%;	
+	  margin-top: 72px;
+}
+  
+#hero .position-relative {
+    width: 1440px;
+}
+  
+.welcome {
+    height: 407px;
+}
+  
+.herocar {
+    background-color: var(--light-blue);
+    width: 100%;
+}
+  
+.herocar img {
+    right: 0;
+    max-width: 704px;
+    height: 407px;
+}
+  
+.slogan {
+    font-size: 2.25rem;
+}
+  
+.welcome-text .fw-light {
+    max-width: 468px;
+}
+/* Hero Section Styling Ended */
+
+/* Search Section Styling Started */
+#search .container {
+    width: 75%;
+    margin-top: -85px;
+    position: relative;
+    z-index: 2;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+  
+#search label, #search input, #search .form-select {
+    font-size: 12px;
+    border-radius: 2px;
+}
+  
+#search label {
+    font-family: 'Rubik', sans-serif;
+}
+  
+.background {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    scale: 1.0002;
+}
+  
+.search-card {
+    background: var(--white);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8% !important;
+    font-family: 'Helvetica';
+    font-style: normal;
+    color: var(--black);
+}
+  
+.search-card img {
+    border-radius: 8px;
+}
+  
+.search-card svg {
+    margin-right: 10px;
+}
+  
+.search-card span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.search-card button {
+    margin-top: -8px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Search Section Styling Ended */
+
+@media (max-width: 992px) {
+  .welcome-text {
+    margin: 0;
+  }
+
+  .herocar img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 16px;
+    background-color: var(--light-blue);
+  }
+
+  .welcome {
+    height: fit-content;
+    margin-top: 20px;
+  }
+}

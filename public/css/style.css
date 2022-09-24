@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Global Styling Started */
+:root {
+  --dark-blue: #091B6F;
+  --light-blue: #F1F3FF;
+  --green: #5CB85F;   
+  --white: #FFFFFF; 
+  --grey: #C4C4C4;
+}
+
+* {
+	font-family: Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+
+.btn-success {
+	background-color:var(--green);
+	border-radius: 2px;
+	border: none;
+	padding: 8px 12px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+p {
+	font-size: 14px;
+  }
+/* Global Styling Ended */
+
+/* Navbar Section Styling Started */
+nav {
+	background-color: var(--light-blue);
+}
+
+.navbar-brand {
+	width: 100px;
+	height: 34px;
+	background-color: var(--dark-blue);
+}
+
+#offcanvasRight {
+	width: 50%;
+}
+/* Navbar Section Styling Ended */
+
+/* Hero Section Styling Started */
+#hero {
+	background-color: var(--light-blue);
+}
+
+#hero .container {
+	background-color: var(--light-blue);
+	width: 100%;	
+	margin-top: 72px;
+}
+  
+#hero .position-relative {
+	width: 1440px;
+}
+  
+.welcome {
+	height: 407px;
+}
+
+.herocar {
+	background-color: var(--light-blue);
+	width: 100%;
+}
+
+.herocar img {
+	right: 0;
+	max-width: 704px;
+	height: 407px;
+}
+
+.welcome-text .fw-light {
+	max-width: 468px;
+}
+
+/* Testimonial Section Styling Started */
+#testimonial .containers {
+	width: 100%;
+	margin: 60px auto 0;
+}
+  
+.item {
+	height: auto;
+	width: 100%;
+	background-color: var(--light-blue);
+	padding: 40px 32px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+	flex-direction: column;
+	align-items: center;
+}
+  
+.carousel-ctrl-prev,
+.carousel-ctrl-next {
+	width: 32px;
+	height: 32px;
+	background-color: var(--white);
+	border: 1px solid var(--grey);
+}
+  
+.carousel-ctrl-prev:hover,
+.carousel-ctrl-next:hover {
+	background-color: var(--green);
+	color: var(--white);
+}
+/* Testimonial Section Styling Ended */
+
+.services p {
+	font-size: 14px;
+}
+
+.cust {
+	font-size: 14px;
+}
+
+.banner {
+	background-color: var(--dark-blue);
+	color: var(--white);
+}
+
+.card {
+	border-radius: 8px;
+}
+
+footer p, footer li {
+	font-size: 14px;
+}
+
+@media (max-width: 992px) {
+	#hero .container {
+		margin-top: 0;
+	}
+
+	.welcome-text {
+	  	margin: 0;
+	}
+
+	.herocar img {
+		max-width: 100%;
+		height: auto;
+		padding-left: 16px;
+		background-color: var(--light-blue);
+	}
+	.welcome {
+		height: fit-content;
+		margin-top: 20px;
+	}
+
+	#services .container {
+		margin-top: 200px;
+	}
+}
+  
+@media (min-width: 1200px) {
+	#testimonial .containers {
+	  width: 1320px;
+	  margin: 100px auto 0;
+	}
+
+	.item {
+	  height: 270px;
+	  width: 619px;
+	  align-items: center;
+	  flex-direction: row;
+	}
+
+	.owl-carousel .owl-item img {
+	  margin-right: 46px;
+	}
+  }
+  
+  @media (max-width: 1024px) {
+	.rate {
+	  justify-content: center;
+	  margin: 24px auto;
+	}
+
+	.owl-carousel {
+	  padding: 0 16px;
+	}
+  }
+  
+  @media (max-width: 1024px) and (min-width: 992px) {
+	.item {
+	  width: 60%;
+	  margin: 0 auto;
+	}
+  }
